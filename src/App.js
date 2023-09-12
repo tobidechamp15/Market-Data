@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
 import './App.css';
+import Navbar from './Components/Navbar';
+import SideBar from './Components/SideBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [removeClass, setRemoveClass] = useState(false);
+
+	return (
+		<div>
+			<Navbar setRemoveClass={setRemoveClass} />
+			<SideBar removeClass={removeClass} />
+			<div className='mt-18'>
+				<h1 className='z-40'>Navbar</h1>
+			</div>
+		</div>
+	);
 }
 
 export default App;
