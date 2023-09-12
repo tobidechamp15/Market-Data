@@ -12,7 +12,7 @@ const Navbar = ({ setRemoveClass }) => {
 	};
 
 	return (
-		<nav className='flex justify-between md:justify-between lg:justify-between items-center xs:fixed top-0 left-0 px-3 pe-11 pt-3 w-full nav-bar'>
+		<nav className='flex justify-between md:justify-between lg:justify-between items-center xs:fixed top-0 left-0 px-3 pe-11 pt-3 w-full bg-orange-100'>
 			<section onClick={handleMenu} className='flex justify-start'>
 				{clicked ? (
 					<img
@@ -39,7 +39,7 @@ const Navbar = ({ setRemoveClass }) => {
 				<span>About us</span>
 				<span>Contact us</span>
 			</section>
-			<section className='hidden lg:flex  gap-4 '>
+			<section className='hidden lg:flex  gap-4 moveToTop '>
 				<button className='px-6 py-2 rounded bg-black text-white '>
 					Sign-up
 				</button>
