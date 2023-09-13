@@ -15,21 +15,21 @@ const SideBar = ({ removeClass }) => (
         tabIndex="0"
         className="hover:text-blue-700 font-bold duration-300 cursor-pointer"
       >
-        About
+        Solutions
       </span>
       <span
         role="button"
         tabIndex="0"
         className="hover:text-blue-700 font-bold duration-300 cursor-pointer"
       >
-        Contact
+        About us
       </span>
       <span
         role="button"
         tabIndex="0"
         className="hover:text-blue-700 font-bold duration-300 cursor-pointer"
       >
-        Sources
+        Contact us
       </span>
     </div>
     <section className="flex flex-col gap-4 ">
