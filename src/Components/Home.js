@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import fruits from '../assets/fruits.png';
 import Ready from './Ready';
 import Explore from './Explore';
+import Advertisement from './Advertisement';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
@@ -27,6 +28,7 @@ const Home = ({ addClass }) => (
       </section>
     </div>
     <Explore />
+    <Advertisement />
     <Ready />
   </div>
 );
