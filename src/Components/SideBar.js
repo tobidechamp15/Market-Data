@@ -5,7 +5,7 @@ const SideBar = ({ removeClass }) => {
 		<div
 			className={
 				removeClass
-					? 'text-white h-screen z-40 bg-orange-500 ease-in-out lg:hidden sidebar w-100  duration-700 flex justify-around items-center flex-col gap-4 '
+					? 'text-white h-screen  bg-orange-500 ease-in-out lg:hidden sidebar w-100  duration-700 flex justify-around items-center flex-col gap-4 '
 					: 'easeIn'
 			}>
 			<div className='flex flex-col gap-8 items-center text-black justify-center '>

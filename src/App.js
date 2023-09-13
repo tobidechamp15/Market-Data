@@ -3,17 +3,20 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import SideBar from './Components/SideBar';
+import Home from './Components/Home';
 
 function App() {
 	const [removeClass, setRemoveClass] = useState(false);
+	const [addClass, setAddClass] = useState(false);
 
 	return (
 		<div>
-			<Navbar setRemoveClass={setRemoveClass} />
+			<Navbar
+				setRemoveClass={setRemoveClass}
+				setAddClass={setAddClass}
+			/>
 			<SideBar removeClass={removeClass} />
-			<div className='mt-18'>
-				<h1 className='z-40'>Navbar</h1>
-			</div>
+			<Home addClass={addClass} />
 		</div>
 	);
 }
