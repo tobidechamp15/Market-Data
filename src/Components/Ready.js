@@ -4,13 +4,13 @@ import fruits2 from '../assets/fruits2.png';
 const Ready = () => (
   <div className="flex flex-row-reverse bg-orange-100 w-full p-[5%] md:ps-0 md:pt-0  rounded-bl-[60px] md:rounded-tl-[60px]">
     <section className=" flex flex-col md:justify-center md:items-center md:h-screen">
-      <span className="text-[40px] font-[Roboto,sans-serif] font-medium md:w-[70%]">
+      <p className="text-[40px] font-[Roboto,sans-serif] font-medium md:w-[70%]">
         Ready to build a smart portfolio for food market data?
-      </span>
-      <span className='mt-[10%] font-semibold text-[18px] text-justify md:w-[70%] font-["Poppins", sans-serif]'>
+      </p>
+      <p className='mt-[10%] font-semibold text-[18px] text-justify md:w-[70%] font-["Poppins", sans-serif]'>
         Create your account, subscribe and see how market data helps your
         business performance with informed decision making.
-      </span>
+      </p>
 
       <button
         type="button"
