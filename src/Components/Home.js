@@ -4,6 +4,7 @@ import fruits from '../assets/fruits.png';
 import Ready from './Ready';
 import Explore from './Explore';
 import Advertisement from './Advertisement';
+import Details from './Details';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
@@ -30,6 +31,7 @@ const Home = ({ addClass }) => (
     <Explore />
     <Advertisement />
     <Ready />
+    <Details />
   </div>
 );
 
