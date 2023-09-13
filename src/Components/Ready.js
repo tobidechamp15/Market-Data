@@ -2,7 +2,7 @@ import React from 'react';
 import fruits2 from '../assets/fruits2.png';
 
 const Ready = () => (
-  <div className="flex flex-row-reverse bg-orange-100 w-full p-[5%] md:ps-0 md:pt-0 md:pb-0 rounded-bl-[60px] md:rounded-tl-[60px]">
+  <div className="flex flex-row-reverse md:justify-between bg-orange-100 w-full p-[5%] md:ps-0 md:pt-0 md:pb-0 rounded-bl-[60px] md:rounded-tl-[60px]">
     <section className=" flex flex-col md:justify-center md:items-center md:h-screen">
       <p className="text-[40px] font-[Roboto,sans-serif] font-medium md:w-[70%]">
         Ready to build a smart portfolio for food market data?
