@@ -7,12 +7,16 @@ import Home from './Components/Home';
 
 function App() {
 	const [removeClass, setRemoveClass] = useState(false);
+	const [addClass, setAddClass] = useState(false);
 
 	return (
 		<div>
-			<Navbar setRemoveClass={setRemoveClass} />
+			<Navbar
+				setRemoveClass={setRemoveClass}
+				setAddClass={setAddClass}
+			/>
 			<SideBar removeClass={removeClass} />
-			<Home/>
+			<Home addClass={addClass} />
 		</div>
 	);
 }

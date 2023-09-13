@@ -1,9 +1,9 @@
 import React from 'react';
-import fruits from '../assets/fruits.png'
+import fruits from '../assets/fruits.png';
 
-const Home = () => {
+const Home = ({ addClass }) => {
 	return (
-		<div className='flex md:h-screen'>
+		<div className={`flex md:h-screen      ${addClass ? 'hidden' : ''}`}>
 			<section className='home-container flex flex-col  w-full p-[5%] justify-end md:h-screen md:justify-center  bg-orange-100 rounded-bl-[60px]'>
 				<p className='text-[40px] font-[Roboto,sans-serif] font-medium w-[70%]'>
 					Food intelligence for all, market data at your fingertips.

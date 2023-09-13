@@ -2,18 +2,22 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import cancel from '../assets/cancel.png';
 
-const Navbar = ({ setRemoveClass }) => {
+const Navbar = ({ setRemoveClass , setAddClass }) => {
 	const [clicked, setClicked] = useState(false);
 
 	const handleMenu = () => {
-		console.log('object');
 		setRemoveClass((prevState) => !prevState);
+
 		setClicked(!clicked);
+
+		setAddClass((prevState) => !prevState);
 	};
 
 	return (
 		<nav className='flex justify-between md:justify-between lg:justify-between items-center xs:fixed top-0 left-0 px-3 pe-11 pt-3 w-full bg-orange-100'>
-			<section onClick={handleMenu} className='flex justify-start'>
+			<section
+				onClick={handleMenu}
+				className='flex justify-start'>
 				{clicked ? (
 					<img
 						src={cancel}
