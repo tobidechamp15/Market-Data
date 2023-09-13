@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import fruits from '../assets/fruits.png';
 import Ready from './Ready';
+import Explore from './Explore';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
@@ -25,6 +26,7 @@ const Home = ({ addClass }) => (
         <img src={fruits} alt="fruits" className=" w-4/5 -ms-[50%]" />
       </section>
     </div>
+    <Explore />
     <Ready />
   </div>
 );
