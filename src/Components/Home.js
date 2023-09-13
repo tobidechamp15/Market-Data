@@ -5,6 +5,7 @@ import Ready from './Ready';
 import Explore from './Explore';
 import Advertisement from './Advertisement';
 import Details from './Details';
+import Footer from './Footer';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
@@ -32,6 +33,7 @@ const Home = ({ addClass }) => (
     <Advertisement />
     <Ready />
     <Details />
+    <Footer />
   </div>
 );
 
