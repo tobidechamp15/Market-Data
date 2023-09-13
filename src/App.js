@@ -6,19 +6,19 @@ import SideBar from './Components/SideBar';
 import Home from './Components/Home';
 
 function App() {
-	const [removeClass, setRemoveClass] = useState(false);
-	const [addClass, setAddClass] = useState(false);
+  const [removeClass, setRemoveClass] = useState(false);
+  const [addClass, setAddClass] = useState(false);
 
-	return (
-		<div>
-			<Navbar
-				setRemoveClass={setRemoveClass}
-				setAddClass={setAddClass}
-			/>
-			<SideBar removeClass={removeClass} />
-			<Home addClass={addClass} />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar
+        setRemoveClass={setRemoveClass}
+        setAddClass={setAddClass}
+      />
+      <SideBar removeClass={removeClass} />
+      <Home addClass={addClass} />
+    </div>
+  );
 }
 
 export default App;
