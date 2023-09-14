@@ -6,11 +6,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Signup from './Components/Signup';
-// import second from './Components/Signup'
+import Personal from './Components/Personal';
+import Company from './Components/Company';
+import Error from './Components/Error';
 
 const router = createBrowserRouter([
-  { path: '/', element: <App /> },
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+  },
   { path: '/sign-up', element: <Signup /> },
+  {
+    path: '/sign-up',
+    element: <Signup />,
+    children: [
+      { path: '/sign-up/personal', element: <Personal /> },
+      { path: '/sign-up/company', element: <Company /> },
+    ],
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -25,7 +25,7 @@ const Home = ({ addClass }) => (
           type="button"
           className="px-5 py-5 lg:px-12 lg:py-4  mt-16 rounded  bg-black w-fit text-base text-white"
         >
-          <Link to="/sign-up">Get Started</Link>
+          <Link to="/sign-up/personal">Get Started</Link>
         </button>
       </section>
       <section className="hidden md:flex  w-2/5 bg-green-600 rounded-tl-[60px] -mt-[76px] justify-center items-center">
