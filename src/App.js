@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-
 import './App.css';
 import Navbar from './Components/Navbar';
 import SideBar from './Components/SideBar';
 import Home from './Components/Home';
+// import Signup from './Components/Signup';
 
 function App() {
   const [removeClass, setRemoveClass] = useState(false);
@@ -11,10 +11,7 @@ function App() {
 
   return (
     <div>
-      <Navbar
-        setRemoveClass={setRemoveClass}
-        setAddClass={setAddClass}
-      />
+      <Navbar setRemoveClass={setRemoveClass} setAddClass={setAddClass} />
       <SideBar removeClass={removeClass} />
       <Home addClass={addClass} />
     </div>

@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 import fruits from '../assets/fruits.png';
 import Ready from './Ready';
 import Explore from './Explore';
 import Advertisement from './Advertisement';
 import Details from './Details';
 import Footer from './Footer';
+// import Signup from './Signup';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
@@ -22,7 +25,7 @@ const Home = ({ addClass }) => (
           type="button"
           className="px-5 py-5 lg:px-12 lg:py-4  mt-16 rounded  bg-black w-fit text-base text-white"
         >
-          Get Started
+          <Link to="/sign-up">Get Started</Link>
         </button>
       </section>
       <section className="hidden md:flex  w-2/5 bg-green-600 rounded-tl-[60px] -mt-[76px] justify-center items-center">
