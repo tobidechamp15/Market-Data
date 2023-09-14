@@ -56,3 +56,50 @@ code {
 .moveToTop {
   z-index: 99;
 }
+
+input {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+  outline: none;
+  width: 96%;
+  padding-left: 3%;
+  margin: 0 0 3%;
+  font-size: 12px;
+}
+
+select {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: 1%;
+  color: grey;
+  margin: 0 0 3%;
+  font-size: 12px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.navLink {
+  padding: 10px;
+  width: 100%;
+}
+
+.navLink:hover,
+.navLink:active {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
