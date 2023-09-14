@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link, Outlet, NavLink } from 'react-router-dom';
-// import { NavLink } from 'react-router-dom';
 import SignupImg from '../assets/signup_img.svg';
 import check from '../assets/check-circle.svg';
 import logo from '../assets/logo.png';
-// import Personal from './Personal';
 
 const Signup = () => (
   <section className="flex flex-col md:flex-row md:h-screen md:w-full">

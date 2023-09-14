@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import SideBar from './Components/SideBar';
 import Home from './Components/Home';
-// import Signup from './Components/Signup';
 
 function App() {
   const [removeClass, setRemoveClass] = useState(false);

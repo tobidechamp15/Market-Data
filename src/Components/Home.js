@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
 import fruits from '../assets/fruits.png';
 import Ready from './Ready';
 import Explore from './Explore';
 import Advertisement from './Advertisement';
 import Details from './Details';
 import Footer from './Footer';
-// import Signup from './Signup';
 
 const Home = ({ addClass }) => (
   <div className={`${addClass ? 'hidden' : 'flex flex-col'} `}>
