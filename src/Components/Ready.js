@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import fruits2 from '../assets/fruits2.png';
 
 const Ready = () => (
@@ -11,13 +12,14 @@ const Ready = () => (
         Create your account, subscribe and see how market data helps your
         business performance with informed decision making.
       </p>
-
-      <button
-        type="button"
-        className="px-5 py-5 md:px-12 md:py-4 flex items-center self-center mt-16 rounded  bg-black w-fit text-base text-white"
-      >
-        Get started
-      </button>
+      <Link to="/sign-up/personal">
+        <button
+          type="button"
+          className="px-5 py-5 md:px-12 md:py-4 flex items-center self-center mt-16 rounded  bg-black w-fit text-base text-white"
+        >
+          Get started
+        </button>
+      </Link>
     </section>
     <section className="hidden md:flex justify-center items-center w-2/5 bg-red-500 rounded-tl-[60px]">
       <img src={fruits2} alt="fruits 2" className="ms- ms-[50%]" />
