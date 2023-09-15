@@ -9,6 +9,8 @@ import Signup from './Components/Signup';
 import Personal from './Components/Personal';
 import Company from './Components/Company';
 import Error from './Components/Error';
+import Login from './Components/Login';
+import Forgot from './Components/Forgot';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
       { path: '/sign-up/personal', element: <Personal /> },
       { path: '/sign-up/company', element: <Company /> },
     ],
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/forgot-password',
+    element: <Forgot />,
   },
 ]);
 
